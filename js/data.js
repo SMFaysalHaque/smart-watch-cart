@@ -8,7 +8,7 @@ const smartWatch = {
       model: "Forerunner 290XT",
       color: "#816BFF",
       colorName: "Purple",
-      imgUrl: "../images/purpel_image.png",
+      imgUrl: "/images/purpel_image.png",
       description:
         "I must explain to you how all this mistaken idea of denoun cing ple praising pain was born and I will give you a complete account of the system, and expound the actual teaching.",
       wristSizes: [
@@ -45,7 +45,7 @@ const smartWatch = {
       model: "Yison Celebrat SW6Pro",
       color: "#1FCEC9",
       colorName: "Cyan",
-      imgUrl: "../images/cyan_image.png",
+      imgUrl: "/images/cyan_image.png",
       description:
         "The Yison Celebrat SW6Pro is a Bluetooth Calling Smart Watch with a TFT 1.91-inch touch screen and HD resolution of 240x280. The smartwatch is powered by the AB8918B CPU and with 64MB ROM. With Bluetooth 5.0, it supports calls for convenient communication.",
       wristSizes: [
@@ -82,7 +82,7 @@ const smartWatch = {
       model: "Yison Celebrat SW2Pro",
       color: "#4B97D3",
       colorName: "Lightblue",
-      imgUrl: "../images/light_blue_image.png",
+      imgUrl: "/images/light_blue_image.png",
       description:
         "The Yison Celebrat SW2Pro Smart Watch is designed for your daily activities. It features a 1.83-inch TFT touch screen with a high resolution of 240x280 pixels. It pffers IP56 water resistance. The Yison Celebrat SW2Pro Smart Watch is powered by the AB8918B CPU with 32MB of ROM.",
       wristSizes: [
@@ -119,7 +119,7 @@ const smartWatch = {
       model: "COLMI P71",
       color: "#3B4747",
       colorName: "Black",
-      imgUrl: "../images/black_image.png",
+      imgUrl: "/images/black_image.png",
       description:
         "The COLMI P71 Bluetooth Calling Smartwatch redefines the smartwatch experience with its outstanding features and cutting-edge technology. With a 1.9-inch screen, this wristwatch provides crisp visuals, a broad range of view, and vibrant information for a more immersive and convenient user experience.",
       wristSizes: [
