@@ -82,8 +82,6 @@ function updateCheckoutObj(watch) {
   checkoutObj.size = watch.wristSizes[0].size;
   checkoutObj.price = watch.wristSizes[0].newPrice;
   checkoutObj.favorite = watch.favorite || false;
-
-  console.log("Updated checkoutObj:", checkoutObj);
 }
 
 function generateRadioButtons(watches, selectedId) {
@@ -107,7 +105,6 @@ function generateRadioButtons(watches, selectedId) {
       checkoutObj.qty = 0;
       const digitArea = document.getElementById("digit-area");
       digitArea.textContent = checkoutObj.qty;
-      console.log("Radio Button Clicked: ", checkoutObj);
     });
 
     const label = document.createElement("label");
@@ -151,8 +148,6 @@ function getWatchPrice(value) {
 
         checkoutObj.size = el.size;
         checkoutObj.price = el.newPrice;
-        console.log(el);
-        console.log(checkoutObj);
       });
     }
   });
@@ -175,21 +170,17 @@ function toggleFavorite(value) {
   }
 
   favoriteFalse.addEventListener("click", () => {
-    console.log("Favorite state1:", checkoutObj);
     value.favorite = true;
 
     checkoutObj.favorite = value.favorite;
     updateFavoriteUI();
-    console.log("Favorite state2:", checkoutObj);
   });
 
   favoriteTrue.addEventListener("click", () => {
-    console.log("Favorite state1:", checkoutObj);
     value.favorite = false;
 
     checkoutObj.favorite = value.favorite;
     updateFavoriteUI();
-    console.log("Favorite state1:", checkoutObj);
   });
 
   updateFavoriteUI();
@@ -204,7 +195,6 @@ function increment(value) {
       checkoutObj.qty++;
       digitArea.textContent = checkoutObj.qty;
       checkoutObj.totalPrice = checkoutObj.qty * checkoutObj.price;
-      console.log(checkoutObj);
     }
   });
 }
@@ -218,7 +208,6 @@ function decrement(value) {
       checkoutObj.qty--;
       digitArea.textContent = checkoutObj.qty;
       checkoutObj.totalPrice = checkoutObj.qty * checkoutObj.price;
-      console.log(checkoutObj);
     }
   });
 }
@@ -238,7 +227,6 @@ function addToCart() {
     }
 
     localStorage.setItem("checkout", JSON.stringify(checkoutLists));
-    console.log("Updated checkout lists:", checkoutLists);
 
     checkoutBtn();
   });
@@ -246,7 +234,6 @@ function addToCart() {
 
 function showCartList() {
   const cartList = document.getElementById("modal-shade");
-  console.log(checkoutLists);
 
   const lists = localStorage.getItem("checkout");
   const parsedLists = lists ? JSON.parse(lists) : [];
