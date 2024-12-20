@@ -338,7 +338,9 @@ function checkout() {
   const modalShade = document.getElementById("modal-shade");
 
   checkout.addEventListener("click", () => {
+    checkoutLists = [];
     localStorage.clear();
+    localStorage.setItem("checkout", JSON.stringify(checkoutLists));
     modalShade.style.display = "none";
     document.body.classList.remove("no-scroll");
     showCartList();
