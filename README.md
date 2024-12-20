@@ -1,4 +1,4 @@
-Link preview: https://smfaysalhaque.github.io/smart-watch-cart/index.html
+Link preview: https://smart-watch-cart.vercel.app/
 
 If you want to run this project, please download it and open it with a live server.
 
